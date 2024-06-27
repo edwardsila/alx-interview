@@ -1,6 +1,6 @@
 # Pascal's Triangle Project
 
-![ALX](![img](https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png))
+![img](https://assets.imaginablefutures.com/media/images/ALX_Logo.max-200x150.png)
 
 ## Overview
 
