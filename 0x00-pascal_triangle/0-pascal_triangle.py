@@ -1,23 +1,20 @@
 #!/usr/bin/python3
 """
-function creates pascal triangle
+Pascal's Triangle
 """
 
 
 def pascal_triangle(n):
-    if n <= 0:
-        return []
-
-    triangle = [[1]]
-
-    for i in range(1, n):
-        row = [1]
-
-        """ Generate the middle elements """
-        row.extend([triangle[i - 1][j] + triangle[i - 1][j + 1]
-                    for j in range(len(triangle[i - 1]) - 1)])
-
-        row.append(1)
-        triangle.append(row)
-
+    """Create a function def pascal_triangle(n): that returns a list of lists
+    of integers representing the Pascal’s triangle of n
+    """
+    triangle = []
+    if n > 0:
+        for i in range(1, n + 1):
+            row = []
+            C = 1
+            for j in range(1, i + 1):
+                row.append(C)
+                C = C * (i - j) // j
+            triangle.append(row)
     return triangle
